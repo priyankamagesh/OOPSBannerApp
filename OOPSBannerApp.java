@@ -1,11 +1,3 @@
-/**
- * OOPSBannerApp - Use Case 5
- * Prints the word "OOPS" using compact array initialization
- * with String.join() and enhanced for-loop.
- *
- * @author Roshan
- * @version 5.0
- */
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
