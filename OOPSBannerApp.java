@@ -1,16 +1,16 @@
 /**
- * OOPSBannerApp - Use Case 4
- * Prints the word "OOPS" using String array and loop.
- * Improves modularity and reusability.
+ * OOPSBannerApp - Use Case 5
+ * Prints the word "OOPS" using compact array initialization
+ * with String.join() and enhanced for-loop.
  *
  * @author Roshan
- * @version 4.0
+ * @version 5.0
  */
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        // Store banner lines inside an array
+        // Array declaration and initialization in one statement
         String[] banner = {
 
                 String.join("   ",
