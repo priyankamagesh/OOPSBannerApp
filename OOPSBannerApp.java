@@ -1,14 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * OOPSBannerApp - Use Case 8
- * Uses HashMap to store character patterns
- * and renders banner via dedicated function.
- *
- * @author Roshan
- * @version 8.0
- */
 public class OOPSBannerApp {
 
     // Centralized pattern storage
