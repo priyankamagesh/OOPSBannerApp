@@ -1,64 +1,62 @@
 /**
- * OOPSBannerApp - Use Case 5
- * Prints the word "OOPS" using compact array initialization
- * with String.join() and enhanced for-loop.
+ * OOPSBannerApp - Use Case 6
+ * Uses static helper methods to generate character patterns.
+ * Demonstrates modular design and DRY principle.
  *
  * @author Roshan
- * @version 5.0
+ * @version 6.0
  */
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        // Array declaration and initialization in one statement
-        String[] banner = {
+        String[] o1 = buildO();
+        String[] o2 = buildO(); // Reuse method
+        String[] p  = buildP();
+        String[] s  = buildS();
 
-                String.join("   ",
-                        " ***** ",
-                        " ***** ",
-                        " ******",
-                        " ******"),
-
-                String.join("   ",
-                        "*     *",
-                        "*     *",
-                        "*     *",
-                        "*      "),
-
-                String.join("   ",
-                        "*     *",
-                        "*     *",
-                        "****** ",
-                        " ***** "),
-
-                String.join("   ",
-                        "*     *",
-                        "*     *",
-                        "*      ",
-                        "      *"),
-
-                String.join("   ",
-                        "*     *",
-                        "*     *",
-                        "*      ",
-                        "*     *"),
-
-                String.join("   ",
-                        "*     *",
-                        "*     *",
-                        "*      ",
-                        "*     *"),
-
-                String.join("   ",
-                        " ***** ",
-                        " ***** ",
-                        "*      ",
-                        " ***** ")
-        };
-
-        // Print using enhanced for-loop
-        for (String line : banner) {
-            System.out.println(line);
+        // Combine letters row by row
+        for (int i = 0; i < o1.length; i++) {
+            System.out.println(o1[i] + "   " + o2[i] + "   " + p[i] + "   " + s[i]);
         }
+    }
+
+    // Static method for letter O
+    public static String[] buildO() {
+        return new String[] {
+                " ***** ",
+                "*     *",
+                "*     *",
+                "*     *",
+                "*     *",
+                "*     *",
+                " ***** "
+        };
+    }
+
+    // Static method for letter P
+    public static String[] buildP() {
+        return new String[] {
+                "****** ",
+                "*     *",
+                "****** ",
+                "*      ",
+                "*      ",
+                "*      ",
+                "*      "
+        };
+    }
+
+    // Static method for letter S
+    public static String[] buildS() {
+        return new String[] {
+                " ******",
+                "*      ",
+                " ***** ",
+                "      *",
+                "*     *",
+                "*     *",
+                " ***** "
+        };
     }
 }
