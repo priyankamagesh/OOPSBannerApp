@@ -1,62 +1,64 @@
 /**
- * OOPSBannerApp - Use Case 3
- * Prints the word "OOPS" using String.join() for better memory efficiency.
+ * OOPSBannerApp - Use Case 4
+ * Prints the word "OOPS" using String array and loop.
+ * Improves modularity and reusability.
  *
  * @author Roshan
- * @version 3.0
+ * @version 4.0
  */
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        String line1 = String.join("   ",
-                " ***** ",
-                " ***** ",
-                " ******",
-                " ******");
+        // Store banner lines inside an array
+        String[] banner = {
 
-        String line2 = String.join("   ",
-                "*     *",
-                "*     *",
-                "*     *",
-                "*      ");
+                String.join("   ",
+                        " ***** ",
+                        " ***** ",
+                        " ******",
+                        " ******"),
 
-        String line3 = String.join("   ",
-                "*     *",
-                "*     *",
-                "****** ",
-                " ***** ");
+                String.join("   ",
+                        "*     *",
+                        "*     *",
+                        "*     *",
+                        "*      "),
 
-        String line4 = String.join("   ",
-                "*     *",
-                "*     *",
-                "*      ",
-                "      *");
+                String.join("   ",
+                        "*     *",
+                        "*     *",
+                        "****** ",
+                        " ***** "),
 
-        String line5 = String.join("   ",
-                "*     *",
-                "*     *",
-                "*      ",
-                "*     *");
+                String.join("   ",
+                        "*     *",
+                        "*     *",
+                        "*      ",
+                        "      *"),
 
-        String line6 = String.join("   ",
-                "*     *",
-                "*     *",
-                "*      ",
-                "*     *");
+                String.join("   ",
+                        "*     *",
+                        "*     *",
+                        "*      ",
+                        "*     *"),
 
-        String line7 = String.join("   ",
-                " ***** ",
-                " ***** ",
-                "*      ",
-                " ***** ");
+                String.join("   ",
+                        "*     *",
+                        "*     *",
+                        "*      ",
+                        "*     *"),
 
-        System.out.println(line1);
-        System.out.println(line2);
-        System.out.println(line3);
-        System.out.println(line4);
-        System.out.println(line5);
-        System.out.println(line6);
-        System.out.println(line7);
+                String.join("   ",
+                        " ***** ",
+                        " ***** ",
+                        "*      ",
+                        " ***** ")
+        };
+
+        // Print using enhanced for-loop
+        for (String line : banner) {
+            System.out.println(line);
+        }
     }
 }
