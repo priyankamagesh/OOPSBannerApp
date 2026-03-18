@@ -1,11 +1,3 @@
-/**
- * OOPSBannerApp - Use Case 4
- * Prints the word "OOPS" using String array and loop.
- * Improves modularity and reusability.
- *
- * @author Roshan
- * @version 4.0
- */
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
