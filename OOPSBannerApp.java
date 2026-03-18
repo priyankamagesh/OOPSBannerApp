@@ -1,11 +1,3 @@
-/**
- * OOPSBannerApp - Use Case 7
- * Implements CharacterPatternMap class to encapsulate
- * character and its banner pattern.
- *
- * @author Roshan
- * @version 7.0
- */
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
