@@ -1,10 +1,3 @@
-/**
- * OOPSBannerApp - Use Case 1
- * Prints the literal text "OOPS" to the console.
- *
- * @author Roshan
- * @version 1.0
- */
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
