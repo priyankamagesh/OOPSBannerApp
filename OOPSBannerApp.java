@@ -1,11 +1,3 @@
-/**
- * OOPSBannerApp - Use Case 6
- * Uses static helper methods to generate character patterns.
- * Demonstrates modular design and DRY principle.
- *
- * @author Roshan
- * @version 6.0
- */
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
