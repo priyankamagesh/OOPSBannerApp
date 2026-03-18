@@ -1,10 +1,3 @@
-/**
- * OOPSBannerApp - Use Case 3
- * Prints the word "OOPS" using String.join() for better memory efficiency.
- *
- * @author Roshan
- * @version 3.0
- */
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
